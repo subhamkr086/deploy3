@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background: #d04f4f; */
+    font-family: "Roboto", sans-serif;
+}
+
+.progress-section {
+    width: 100%;
+    max-width: 65vw;
+    /* border-radius: 40px;
+    background: #ffffff; */
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    box-shadow: 0px 1px 10px 0px #0000001f;
+}
+
+img {
+    width: 30px;
+    display: block;
+    margin: 20px auto;
+}
+
+.task-progress {
+    margin: 1.5rem 0;
+}
+
+.task-progress p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #525252;
+    font-size: 1rem;
+}
+
+span {
+    color: #525252;
+}
+
+.progress {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 10px;
+    height: 0.6rem;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+}
+
+.progress::-webkit-progress-bar,
+.progress::-webkit-progress-value {
+    border-radius: 10px;
+}
+
+.progress::-moz-progress-bar {
+    border-radius: 10px;
+}
+
+.progress1::-webkit-progress-value {
+    background: rgb(53, 0, 128);
+}
+
+.progress2::-webkit-progress-value {
+    background: orange;
+}
+
+.progress3::-webkit-progress-value {
+    background: red;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+.company-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    /* background-color: #f4f4f4;
+    border: 1px solid #ddd; */
+}
+
+.company-name {
+    font-size: 2.6rem;
+    flex-grow: 1;
+}
+
+.extra-text {
+    font-size: 2.6rem;
+    color: #666;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Optional: adds spacing between columns */
+}
+
+.grid-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* circle css */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 0 20px;
+    width: 280px;
+    height: 350px;
+    border-radius: 5px;
+  /*   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .card .percent {
+    position: relative;
+  }
+  
+  .card svg {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    transform: rotate(-90deg);
+  }
+  
+  .card svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 10;
+    stroke-linecap: round;
+  }
+  
+  .card svg circle:last-of-type {
+    stroke-dasharray: 625px;
+    stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+    stroke: #3498db; 
+  }
+  
+  .card .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card .number h3 {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+  
+  .card .number h3 span {
+    font-size: 2rem;
+  }
+  
+  
+  .card:nth-child(1) svg circle:last-of-type {
+    stroke: #f39c12;
+  }
+  
